@@ -1,29 +1,25 @@
-<header class="header scrolled">
-	<nav>
+<header class="header">
+	<nav class="flex">
 		<div>
 			<a href="/">
 				<h2>Home</h2>
 			</a>
 		</div>
-		<div>
-			<a href="/blog">
+		<div class="page-nav">
+			<a class="button-nav" href="/about">
+				<h2>About</h2>
+			</a>
+			<a class="button-nav" href="/blog">
 				<h2>Blog</h2>
 			</a>
-		</div>
-		<div>
-			<a href="/contact">
-				<h2>Contact Me</h2>
+			<a class="button-nav" href="/contact">
+				<h2>Contact</h2>
 			</a>
 		</div>
 	</nav>
 </header>
 
 <style>
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
 	.header {
 		top: 0;
 		left: 0;
@@ -32,17 +28,27 @@
 		transition: background-color 0.3s ease-in-out;
 		z-index: 1000;
 	}
-
-	.scrolled {
-		background-color: #333; /* Change this to your desired dark background color */
+	.page-nav {
+		display: flex;
+		flex-direction: row;
 	}
-
+	.button-nav {
+		padding-left: 1rem;
+	}
 	nav {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 	}
-
+	h2 {
+		color: rgb(160, 0, 255);
+		font-size: x-large;
+		font-weight: normal;
+		font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+	h2:hover {
+		color: rgb(200, 70, 255);
+	}
 	nav a {
 		color: #fff;
 		text-decoration: none;
