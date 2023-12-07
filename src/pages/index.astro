@@ -1,87 +1,62 @@
 ---
-import Layout from '../layouts/main-layout.astro';
+import Banner from "../components/Banner.astro";
+import SkillTabs from "../components/SkillTabs.astro";
+import Layout from "../layouts/main-layout.astro";
 ---
-
-<script>
-
-</script>
 
 <Layout title="Jamon Jordan Portfolio & Blog | Landing Page">
 	<main>
-		<section class="banner">
-			<h1>Hi! My name is Jamon</h1>
-			<section id="about">
-				<p>
-					I'm a passionate developer with expertise in web, mobile, and software
-					development. I love turning ideas into reality through clean and efficient code.
-				</p>
-			</section>
+		<Banner />
+
+		<SkillTabs />
+
+		<section id="projects">
+			<div class="container">
+				<h2>Recent Projects</h2>
+				<p>Explore some of my latest work:</p>
+				<a href="/projects" class="btn-primary"> View Projects</a>
+			</div>
 		</section>
 
-		<section id="skills">
+		<section id="contact">
 			<div class="container">
-			  <h2>Skills</h2>
-			  <ul class="skills-list">
-				<li>React.js</li>
-				<li>Node.js</li>
-				<li>JavaScript (ES6+)</li>
-				<li>HTML5 & CSS3</li>
-				<li>Responsive Design</li>
-				<li>RESTful APIs</li>
-			  </ul>
+				<h2>Contact Me</h2>
+				<p>Let's discuss your project or have a chat!</p>
+				<a href="/contact" class="btn-primary"> Get in Touch</a>
 			</div>
-		  </section>
-
-		  <section id="projects">
-			<div class="container">
-			  <h2>Recent Projects</h2>
-			  <p>Explore some of my latest work:</p>
-			  <a href="/projects" class="btn-primary">
-				View Projects
-			  </a>
-			</div>
-		  </section>
-
-		  <section id="contact">
-			<div class="container">
-			  <h2>Contact Me</h2>
-			  <p>Let's discuss your project or have a chat!</p>
-			  <a href="/contact" class="btn-primary">
-				Get in Touch
-			  </a>
-			</div>
-		  </section>
+		</section>
 	</main>
 </Layout>
 
 <style>
-	.banner {
-		text-align: center;
-		padding: 4rem;
-	}
+
+
 	main {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
+
 	h1 {
 		font-size: 3rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
 		color: transparent;
-		background: linear-gradient(90deg, rgba(255, 0, 200, 1) 0%, rgba(160, 0, 255, 1) 25%, rgba(50, 0, 255, 1) 95%);	
+		background: linear-gradient( 90deg, rgba(255, 0, 200, 1) 0%, rgba(160, 0, 255, 1) 30%, rgba(50, 0, 255, 1) 100%);
 		display: inline-block;
 		background-clip: text;
 		padding: 2rem;
 	}
+
 	h2 {
 		color: #333;
 		font-size: 2em;
 		margin-bottom: 20px;
 		text-align: center;
 	}
+
 	h3 {
 		color: #333;
 		font-size: 2rem;
@@ -90,6 +65,15 @@ import Layout from '../layouts/main-layout.astro';
 		text-align: center;
 		padding: 2rem;
 	}
+
+	h3.skills {
+		color: #ffffff;
+		font-size: 3rem;
+		font-weight: 600;
+		line-height: 1;
+		text-align: center;
+	}
+
 	p {
 		font-size: 1.2em;
 		color: #555;
@@ -98,31 +82,63 @@ import Layout from '../layouts/main-layout.astro';
 	section {
 		color: #fff;
 		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 
-	ul.skills-list {
-		list-style: none;
-		padding: 0;
+	.skill-tabs {
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: center;
-		color: #444;
+		align-items: center;
+		background-color: rgb(160, 0, 255); /* Purple color behind tabs */
+		border-radius: 10px;
+		overflow: hidden;
+		margin-top: 40px;
 	}
 
-	li {
-		font-size: 1.1em;
-		margin: 10px;
-		padding: 10px;
-		border: 1px solid #ddd;
-		border-radius: 5px;
+	.tab {
+		flex: 1;
+		text-align: center;
+		padding: 30px;
+		transition:
+		background-color 0.3s ease-in-out,
+		color 0.3s ease-in-out;
+		cursor: pointer;
 	}
+
+	.tab h3 {
+		font-size: 1.5em;
+		margin-bottom: 10px;
+	}
+
+	.tab p {
+		font-size: 1.2em;
+		color: #fff;
+	}
+
+	.tab:not(:last-child) {
+		border-right: 2px solid #a1a1a1;
+	}
+
+	.tab.web {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	.tab.mobile {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
 	.container {
 		max-width: 800px;
 		margin: 0 auto;
 	}
+
 	.tagline {
 		font-size: 1.5em;
 	}
+
 	a {
 		display: inline-block;
 		padding: 10px 20px;
@@ -134,6 +150,7 @@ import Layout from '../layouts/main-layout.astro';
 	a:hover {
 		background-color: #2980b9;
 	}
+
 	.btn-primary,
 	.btn-secondary {
 		display: inline-block;
