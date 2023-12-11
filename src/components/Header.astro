@@ -1,22 +1,26 @@
+---
+  import JJLogo from './jamon_logo.svg?url';
+---
+
 <header class="header">
-  <nav class="flex">
-    <div>
-      <a href="/">
-        <h2>Home</h2>
-      </a>
-    </div>
-    <div class="page-nav">
-      <a class="button-nav" href="/about">
-        <h2>About</h2>
-      </a>
-      <a class="button-nav" href="/blog">
-        <h2>Blog</h2>
-      </a>
-      <a class="button-nav" href="/contact">
-        <h2>Contact</h2>
-      </a>
-    </div>
-  </nav>
+    <nav class="flex">
+        <div>
+            <a href="/">
+                <img src={JJLogo} />
+            </a>
+        </div>
+        <div class="page-nav">
+            <a class="button-nav" href="/about">
+                <h2>About</h2>
+            </a>
+            <a class="button-nav" href="/blog">
+                <h2>Blog</h2>
+            </a>
+            <a class="button-nav" href="/contact">
+                <h2>Contact</h2>
+            </a>
+        </div>
+    </nav>
 </header>
 
 <style>
