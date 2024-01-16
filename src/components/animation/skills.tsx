@@ -37,7 +37,7 @@ export default function SkillsTab() {
         <h2 className="text-center justify-center py-16 text-4xl font-bold text-gray-100">My Skills</h2>
         <div className="flex flex-row pt-6 pb-24 px-4 justify-center space-x-4">
             {skillsData.map((skill, index) => (
-                <motion.li
+                <motion.div
                     className="bg-white border border-black rounded-lg px-5 py-3"
                     key={index}
                     variants={fadeInAnimationsVariants}
@@ -49,7 +49,7 @@ export default function SkillsTab() {
                     custom={index}
                 >
                         {skill.name}
-                </motion.li>
+                </motion.div>
             ))}
         </div>
     </div>
