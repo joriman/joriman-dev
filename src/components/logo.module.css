@@ -1,0 +1,15 @@
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s forwards normal ease-in-out;
+    animation-iteration-count: 1;
+}
+  
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1022;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
