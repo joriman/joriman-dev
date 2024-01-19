@@ -5,10 +5,13 @@ import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
+
+
 export default function Home() {
 	return (
 		<Layout>
 			<main className="flex flex-col justify-center w-full">
+				
 				<section className="flex flex-col min-h-96 h-[calc(100svh-220px)] justify-center text-center space-y-12">
 					<div>
 						<Slide cascade triggerOnce>
@@ -32,7 +35,10 @@ export default function Home() {
 						</svg>
 					</div>
 					<div className="bg-blue-700 min-h-[256px]">
-						{/*<SkillTabs />*/}
+						<h2 className="text-white text-4xl font-bold p-6">My Skills</h2>
+						<div>
+							
+						</div>
 					</div>
 				</section>
 

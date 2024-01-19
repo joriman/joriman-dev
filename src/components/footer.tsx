@@ -1,8 +1,8 @@
 
 export function Footer() {
     return(
-        <footer className="flex bg-blue-700 text-white pt-24 mt-16 text-center w-full">
-                <div className="justify-center items-center w-full pt-12">
+        <footer className="flex flex-col bg-blue-700 text-white pt-24 mt-16 text-center w-full">
+                <div className="justify-center space-x-2 items-center w-full pt-12">
                         <a
                             href="https://github.com/joriman"
                             type="button"
@@ -32,10 +32,11 @@ export function Footer() {
                             </svg>
                         </a>
             
-                    <div className=" max-w-[800px] m-auto">
+                    
+                </div>
+                <div className=" max-w-[800px] m-auto">
                         <p className="text-base p-5">&copy; 2023 Jamon Jordan. All Rights Reserved.</p>
                     </div>
-                </div>
             </footer>
     )
     
