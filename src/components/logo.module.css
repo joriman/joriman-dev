@@ -1,0 +1,72 @@
+.jpath {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+}
+  
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1022;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.apath {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+}
+  
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1022;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.mpath {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+}
+  
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1022;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.opath {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+}
+  
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1022;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.npath {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+}
+  
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1022;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
