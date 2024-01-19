@@ -12,12 +12,12 @@ export default function Home() {
 				<section className="flex flex-col min-h-96 h-[calc(100svh-220px)] justify-center text-center space-y-12">
 					<div>
 						<Slide cascade triggerOnce>
-							<h1 className="py-4 text-4xl font-extrabold md:text-8xl line-clamp-1 text-center text-transparent bg-gradient-to-r from-pink-600 to-blue-600 inline-block bg-clip-text">Hi! My name is Jamon</h1>
+							<h1 className="py-4 text-4xl font-extrabold md:text-8xl line-clamp-1 text-center text-transparent bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 inline-block bg-clip-text">Hi! My name is Jamon</h1>
 						</Slide>
 						<div className="p-8 space-y-4 text-center">
 							<Fade cascade triggerOnce>
-								<p className="text-lg md:text-4xl">I&apos;m a passionate developer with expertise in web, mobile, and software development.</p>
-								<p className="text-lg md:text-4xl">I love turning ideas into reality through clean and efficient code.</p>
+								<p className="text-md md:text-2xl text-gray-700">I&apos;m a passionate developer with expertise in web, mobile, and software development.</p>
+								<p className="text-md md:text-2xl text-gray-700">I love turning ideas into reality through clean and efficient code.</p>
 							</Fade>
 						</div>
 					</div>
@@ -36,7 +36,7 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="grid grid-cols-2 pt-16 px-72 text-center space-y-4 text-gray-800 font-bold">
+				<section className="md:grid grid-cols-1 md:grid-cols-2 pt-16 md:px-72 text-center space-y-4 text-gray-800 font-bold">
 					<div className="flex flex-col justify-center py-4">
 						<div>
 							<h2 className="font-bold text-4xl m-6 text-center">Recent Projects</h2>
@@ -47,7 +47,7 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="grid grid-cols-2 pt-16 pb-12 px-72 text-center text-gray-800 font-bold">
+				<section className="md:grid grid-cols-1 md:grid-cols-2 pt-16 pb-12 md:px-72 text-center text-gray-800 font-bold">
 					<div></div>
 					<div className="flex flex-col justify-center py-4">
 						<div>
