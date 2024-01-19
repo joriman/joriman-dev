@@ -26,7 +26,7 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="text-center w-screen ">
+				<section className="text-center w-full">
 					<div className="rotate-180">
 						<svg className="flex w-full h-[128px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
 							<path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className=" fill-blue-700"></path>
@@ -34,10 +34,29 @@ export default function Home() {
 							<path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className="fill-blue-700"></path>
 						</svg>
 					</div>
-					<div className="bg-blue-700 min-h-[256px]">
-						<h2 className="text-white text-4xl font-bold p-6">My Skills</h2>
+					<div className="bg-blue-700 space-y-24 py-24">
+						<div className='grid grid-cols-1 md:grid-cols-2 py-4 md:mx-36 text-white'>
+							<article className="mx-4">
+								<h2 className='text-2xl font-bold'>What I enjoy! 👋</h2>
+								<p>As a passionate computer scientist, I thrive on turning ideas into powerful digital solutions. In my almost 2 years in the industry, I&apos;ve had the opportunity to work on diverse projects, collaborate with clients, and build innovative websites and software.</p>
+							</article>
+							<div className='flex justify-center items-center'>
+								<h1>Put image here</h1>
+							</div>
+						</div>
+						
+						<div className='grid grid-cols-1 md:grid-cols-2 md:mx-36 py-4 space-between text-white'>
+							<div className='flex justify-center items-center'>
+								<h1>Put image here</h1>
+							</div>
+							<article className='mx-4'>
+								<h2 className='text-2xl font-bold py-4'>Always Learning! 🚀</h2>
+								<p>I believe in continuous learning and embrace challenges head-on. Whether it&apos;s diving into the latest technologies or solving complex problems, I approach every project with enthusiasm and a commitment to deliver exceptional results.</p>
+							</article>
+						</div>
+
 						<div>
-							
+							<h2 className="font-bold text-2xl text-white pb-12">The Technicals</h2>
 						</div>
 					</div>
 				</section>
