@@ -3,6 +3,7 @@ import { Slide, Fade } from "react-awesome-reveal";
 import Layout from './layout'
 import Link from 'next/link';
 import Head from 'next/head'
+import Technicals from '@/components/landingpage/technicals';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,36 +40,44 @@ export default function Home() {
 							</svg>
 						</div>
 						<div className="bg-blue-700 space-y-24 py-24">
-							<div className='grid grid-cols-1 md:grid-cols-2 py-4 md:mx-36 text-white'>
-								<article className="mx-4">
-									<h2 className='text-2xl font-bold'>What I enjoy! 👋</h2>
-									<p>As a passionate computer scientist, I thrive on turning ideas into powerful digital solutions. In my almost 2 years in the industry, I&apos;ve had the opportunity to work on diverse projects, collaborate with clients, and build innovative websites and software.</p>
-								</article>
-								<div className='flex justify-center items-center'>
-									<h1>Put image here</h1>
-								</div>
-							</div>
 							
-							<div className='grid grid-cols-1 md:grid-cols-2 md:mx-36 py-4 space-between text-white'>
-								<div className='flex justify-center items-center'>
-									<h1>Put image here</h1>
-								</div>
+							<div className='grid grid-cols-1 md:grid-cols-2 md:mx-36 py-4 space-x-4 space-between text-white'>
+								<Slide cascade triggerOnce>
+									<article className="mx-4">
+										<h2 className='text-2xl font-bold py-4'>What I enjoy! 👋</h2>
+										<p>As a passionate computer scientist, I thrive on turning ideas into powerful digital solutions. In my almost 2 years in the industry, I&apos;ve had the opportunity to work on diverse projects, collaborate with clients, and build innovative websites and software.</p>
+									</article>
+								</Slide>
+								<Fade cascade triggerOnce>
+									<div className='flex justify-center items-center'>
+										<h1>Put image here</h1>
+									</div>
+								</Fade>
+							</div>
+								
+								
+							<div className='grid grid-cols-1 md:grid-cols-2 md:mx-36 py-4 space-x-4 space-between text-white'>
+								<Fade cascade triggerOnce>
+									<div className='flex justify-center items-center'>
+										<h1>Put image here</h1>
+									</div>
+								</Fade>
+								<Slide direction='right' cascade triggerOnce>
 								<article className='mx-4'>
 									<h2 className='text-2xl font-bold py-4'>Always Learning! 🚀</h2>
 									<p>I believe in continuous learning and embrace challenges head-on. Whether it&apos;s diving into the latest technologies or solving complex problems, I approach every project with enthusiasm and a commitment to deliver exceptional results.</p>
 								</article>
+								</Slide>
 							</div>
 
 							<div>
-								<h2 className="font-bold text-2xl text-white pb-12">The Technicals</h2>
+								<h2 className="font-bold text-3xl text-white pb-12">The Technicals</h2>
 							</div>
 						</div>
 					</section>
 
-					<section>
-						<div>
-							
-						</div>
+					<section className='block mt-[-8rem] py-4 px-6'>
+						<Technicals />
 					</section>
 
 					<section className="md:grid grid-cols-1 md:grid-cols-2 pt-16 md:px-72 text-center space-y-4 text-gray-800 font-bold">
