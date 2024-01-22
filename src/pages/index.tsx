@@ -71,12 +71,12 @@ export default function Home() {
 							</div>
 
 							<div>
-								<h2 className="font-bold text-3xl text-white pb-12">The Technicals</h2>
+								<h2 className="font-bold text-3xl text-white pb-16">The Technicals</h2>
 							</div>
 						</div>
 					</section>
 
-					<section className='block mt-[-8rem] py-4 px-6'>
+					<section className='block mt-[-8rem] p-6'>
 						<Technicals />
 					</section>
 
