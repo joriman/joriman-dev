@@ -25,8 +25,8 @@ export default function Technicals() {
     return (
         <div className='justify-center items-center md:max-w-[1300px] m-auto relative w-auto shadow-xl'>
             <div className='flex m-[-1rem] rounded-xl bg-gray-100 items-center'>
-                <div className="flex">
-                    <div className='flex-grow flex-shrink basis-0 py-16 px-10 border-r-gray-200 border-r font-medium text-gray-800 text-center items-center space-y-4 box-sizing'>
+                <div className="flex flex-col md:flex-row">
+                    <div className='flex-grow flex-shrink basis-0 py-12 md:py-16 pb-12 px-10 md:border-r border-b md:border-b-0 font-medium text-gray-800 text-center items-center space-y-4 box-sizing'>
                         <span className='inline-block align-middle relative overflow-visible box-content'>
                             <BulbLogo />
                         </span>
@@ -39,7 +39,7 @@ export default function Technicals() {
                             <li><b className="text-blue-700 font-bold text-lg">Website Management</b> <p>Ensuring your online presence is always at its best, from development to maintenance.</p> </li>
                         </ul>
                     </div>
-                    <div className='flex-grow flex-shrink basis-0 py-16 px-10 items-center text-center space-y-4'>
+                    <div className='flex-grow flex-shrink basis-0 py-12 md:pt-16 px-10 items-center text-center space-y-4 border-b md:border-b-0'>
                         <span className='inline-block align-middle relative overflow-visible box-content'>
                             <RocketLogo />
                         </span>
@@ -56,7 +56,7 @@ export default function Technicals() {
                             <li className="space-y-2"><b>Tools</b> <p className="flex flex-row justify-center space-x-4"> <GitLogo /> <VSCodeLogo /> <DockerLogo /> <KubernetesLogo /> <JenkinsLogo /></p></li>
                         </ul>
                     </div>
-                    <div className='flex-grow flex-shrink items- basis-0 py-16 px-10 border-l-gray-200 border-l items-center text-center space-y-4'>
+                    <div className='flex-grow flex-shrink items- basis-0 py-12 md:py-16 px-10 md:border-l items-center text-center space-y-4'>
                         <span className='inline-block align-middle relative overflow-visible box-content'>
                             <BriefcaseLogo />
                         </span>

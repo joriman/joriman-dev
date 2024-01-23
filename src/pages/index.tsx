@@ -87,8 +87,7 @@ export default function Home() {
 								<h2 className="font-bold text-4xl m-6 text-center">Recent Projects</h2>
 								<p className="text-lg mb-4">Explore some of my latest work:</p>
 								<Link href="/projects" className="text-lg py-2 px-4 space-y-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white">View Projects</Link>
-							</div>
-							
+							</div>	
 						</div>
 					</section>
 
