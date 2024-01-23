@@ -7,7 +7,7 @@
   
 @keyframes dash {
     from {
-        stroke-dashoffset: 1022;
+        stroke-dashoffset: 1050;
     }
     to {
         stroke-dashoffset: 0;
