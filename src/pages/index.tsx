@@ -3,7 +3,8 @@ import { Slide, Fade } from "react-awesome-reveal";
 import Layout from './layout'
 import Link from 'next/link';
 import Head from 'next/head'
-import Technicals from '@/components/landingpage/technicals';
+import Technicals from '@/components/landingpage/technicals_section';
+import EmailSection from '@/components/landingpage/email_section';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -76,11 +77,11 @@ export default function Home() {
 						</div>
 					</section>
 
-					<section className='block mt-[-8rem] p-6'>
+					<section className='block mt-[-8rem] p-6 border-b pb-24'>
 						<Technicals />
 					</section>
 
-					<section className="md:grid grid-cols-1 md:grid-cols-2 pt-16 md:px-72 text-center space-y-4 text-gray-800 font-bold">
+					<section className="md:grid grid-cols-1 md:grid-cols-2 mb-12 md:px-72 text-center space-y-4 text-gray-800 font-bold">
 						<div className="flex flex-col justify-center py-4">
 							<div>
 								<h2 className="font-bold text-4xl m-6 text-center">Recent Projects</h2>
@@ -91,15 +92,12 @@ export default function Home() {
 						</div>
 					</section>
 
-					<section className="md:grid grid-cols-1 md:grid-cols-2 pt-16 pb-12 md:px-72 text-center text-gray-800 font-bold">
-						<div></div>
+					<section className="flex flex-col items-center mx-6 md:mx-24 text-gray-800">
 						<div className="flex flex-col justify-center py-4">
-							<div>
-								<h2 className="font-bold text-4xl m-6 text-center">Contact Me</h2>
-								<p className="text-lg mb-4">Let&apos;s discuss your project or have a chat!</p>
-								<Link href="/contact" className="text-lg py-2 px-4 space-y-2 bg-blue-500 rounded-lg hover:bg-blue-700 text-white"> Get in Touch</Link>
-							</div>
+							<h2 className="font-bold text-4xl m-6 text-center">Contact Me</h2>
+							<p className="text-lg mb-4">Let&apos;s discuss your project or have a chat!</p>
 						</div>
+						<EmailSection />
 					</section>
 				</main>
 			</Layout>

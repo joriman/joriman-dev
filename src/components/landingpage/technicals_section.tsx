@@ -8,7 +8,7 @@ import NextLogo from "@/assets/logos/next_logo";
 import CSSLogo from "@/assets/logos/css_logo";
 import SvelteLogo from "@/assets/logos/svelte_logo";
 import TypescriptLogo from "@/assets/logos/typescript_logo";
-import CPlusPlusLogo from "@/assets/cpp_logo";
+import CPlusPlusLogo from "@/assets/logos/cpp_logo";
 import PythonLogo from "@/assets/logos/python_logo";
 import NodeLogo from "@/assets/logos/node_logo";
 import PostgreSQLLogo from "@/assets/logos/postgresql_logo";
