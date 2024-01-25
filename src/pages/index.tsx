@@ -4,8 +4,8 @@ import Layout from './layout'
 import Link from 'next/link';
 import Head from 'next/head'
 import Technicals from '@/components/landingpage/technicals_section';
-import EmailSection from '@/components/landingpage/email-section';
 import AboutSection from '@/components/landingpage/about_section';
+import ContactMeSection from '@/components/landingpage/contact-me-section';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -66,7 +66,7 @@ export default function Home() {
 							<h2 className="font-bold text-4xl m-6 text-center">Contact Me</h2>
 							<p className="text-lg mb-4">Let&apos;s discuss your project or have a chat!</p>
 						</div>
-						<EmailSection />
+						<ContactMeSection />
 					</section>
 				</main>
 			</Layout>
