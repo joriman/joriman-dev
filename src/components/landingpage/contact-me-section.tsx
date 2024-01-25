@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "next/link";
+import React, { useState } from "react";
 
-const EmailSection = () => {
+const ContactMeSection = () => {
+    
     return (
         <div className="grid md:grid-cols-2 relative">
             <div className="flex flex-col justify-center text-center mb-6">
@@ -12,7 +12,7 @@ const EmailSection = () => {
                 </p>
             </div>
             
-            <div>
+            <div className="bg-gray-300 p-4 md:p-8 rounded-lg">
                 <form className="flex flex-col">
                     <div className="mb-6">
                         <label
@@ -70,4 +70,4 @@ const EmailSection = () => {
     );
 };
 
-export default EmailSection;
+export default ContactMeSection;

@@ -4,7 +4,8 @@ import Layout from './layout'
 import Link from 'next/link';
 import Head from 'next/head'
 import Technicals from '@/components/landingpage/technicals_section';
-import EmailSection from '@/components/landingpage/email_section';
+import AboutSection from '@/components/landingpage/about_section';
+import ContactMeSection from '@/components/landingpage/contact-me-section';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -40,44 +41,13 @@ export default function Home() {
 								<path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className="fill-blue-700"></path>
 							</svg>
 						</div>
-						<div className="bg-blue-700 space-y-24 py-24">
-							
-							<div className='grid grid-cols-1 md:grid-cols-2 md:mx-36 py-4 space-x-4 space-between text-white'>
-								<Slide cascade triggerOnce>
-									<article className="mx-4">
-										<h2 className='text-2xl font-bold py-4'>What I enjoy! 👋</h2>
-										<p>As a passionate computer scientist, I thrive on turning ideas into powerful digital solutions. In my almost 2 years in the industry, I&apos;ve had the opportunity to work on diverse projects, collaborate with clients, and build innovative websites and software.</p>
-									</article>
-								</Slide>
-								<Fade cascade triggerOnce>
-									<div className='flex justify-center items-center'>
-										<h1>Put image here</h1>
-									</div>
-								</Fade>
-							</div>
-								
-								
-							<div className='grid grid-cols-1 md:grid-cols-2 md:mx-36 py-4 space-x-4 space-between text-white'>
-								<Fade cascade triggerOnce>
-									<div className='flex justify-center items-center'>
-										<h1>Put image here</h1>
-									</div>
-								</Fade>
-								<Slide direction='right' cascade triggerOnce>
-								<article className='mx-4'>
-									<h2 className='text-2xl font-bold py-4'>Always Learning! 🚀</h2>
-									<p>I believe in continuous learning and embrace challenges head-on. Whether it&apos;s diving into the latest technologies or solving complex problems, I approach every project with enthusiasm and a commitment to deliver exceptional results.</p>
-								</article>
-								</Slide>
-							</div>
-
-							<div>
-								<h2 className="font-bold text-3xl text-white pb-16">The Technicals</h2>
-							</div>
+						<div className="bg-blue-700 space-y-4 pb-32">
+							<AboutSection />
+							<h2 className="font-bold text-4xl text-white">The Technicals</h2>
 						</div>
 					</section>
 
-					<section className='block mt-[-8rem] p-6 border-b pb-24'>
+					<section className='block mt-[-6rem] md:mt-[-8rem] p-6 border-b pb-24'>
 						<Technicals />
 					</section>
 
@@ -96,7 +66,7 @@ export default function Home() {
 							<h2 className="font-bold text-4xl m-6 text-center">Contact Me</h2>
 							<p className="text-lg mb-4">Let&apos;s discuss your project or have a chat!</p>
 						</div>
-						<EmailSection />
+						<ContactMeSection />
 					</section>
 				</main>
 			</Layout>
