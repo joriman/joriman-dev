@@ -14,8 +14,8 @@ export function Navbar() {
                 <Link className="p-2 mx-1 md:p-3 transition ease-in-out delay-50 hover:scale-105 hover:text-purple-500 text-gray-800 text-md md:text-2xl font-semibold" href="/blog">
                     <h2>Blog</h2>
                 </Link>
-                <Link className="p-2 mx-1 md:p-3 transition ease-in-out delay-50 hover:scale-105 hover:text-blue-500 text-gray-800 text-md md:text-2xl font-semibold" href="/contact">
-                    <h2>Contact</h2>
+                <Link className="p-2 mx-1 md:p-3 transition ease-in-out delay-50 hover:scale-105 hover:text-blue-500 text-gray-800 text-md md:text-2xl font-semibold" href="/projects">
+                    <h2>Projects</h2>
                 </Link>
             </div>
         </nav>
