@@ -6,8 +6,8 @@ import { Fade, Slide } from "react-awesome-reveal";
 const AboutSection = () => {
     return (
         <div>
-            <div className='grid grid-cols-1 md:grid-cols-2 md:mx-36 py-4 space-x-4 space-between text-white'>
-                <article className="mx-6 flex flex-col justify-center">
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:mx-36 py-4 md:space-x-4 space-between text-white'>
+                <article className="flex flex-col justify-center md:mx-6">
                     <Slide cascade triggerOnce>
                         <h2 className='text-3xl font-bold py-4'>What I enjoy! 👋</h2>
                         <p className="font-medium text-lg">As a passionate computer scientist, I thrive on turning ideas into powerful digital solutions.</p>
@@ -15,14 +15,14 @@ const AboutSection = () => {
                         <p className="font-medium text-lg">projects, collaborate with clients, and build innovative websites and software.</p>
                     </Slide>
                 </article>
-                <div className='flex justify-center items-center'>
+                <div className='flex justify-center items-center md:mx-6'>
                     <Fade cascade triggerOnce>
                         <CPUImage />
                     </Fade>
                 </div>
             </div>
                 
-            <div className='grid grid-cols-1 md:grid-cols-2 md:mx-36 py-4 space-x-4 space-between text-white'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:mx-36 py-4 space-x-4 space-between text-white'>
                 <div className='flex justify-center items-center order-last md:order-1'>
                     <Fade triggerOnce>
                         <OfficeImage />

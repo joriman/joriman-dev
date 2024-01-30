@@ -12,7 +12,7 @@ const ContactMeSection = () => {
                 </p>
             </div>
             
-            <div className="bg-gray-300 p-4 md:p-8 rounded-lg">
+            <div className="bg-gray-100 p-4 md:p-8 rounded-lg">
                 <form className="flex flex-col">
                     <div className="mb-6">
                         <label

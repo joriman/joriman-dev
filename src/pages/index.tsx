@@ -13,8 +13,8 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Landing Page | Jamon Jordan Portfolio Website & Blog</title>
-				<meta property="og:title" content="This is the title" key="title" />
+				<title>Jamon Jordan Portfolio Website & Blog</title>
+				<meta property="og:title" content="Jamon Jordan's portfolio website and blog" key="title" />
 			</Head>
 			<Layout>
 				<main className="flex flex-col justify-center w-full">
@@ -62,8 +62,8 @@ export default function Home() {
 					</section>
 
 					<section className="flex flex-col items-center mx-6 md:mx-24 text-gray-800">
-						<div className="flex flex-col justify-center py-4">
-							<h2 className="font-bold text-4xl m-6 text-center">Contact Me</h2>
+						<div className="flex flex-col justify-center py-4 text-center">
+							<h2 className="font-bold text-4xl m-6">Contact Me</h2>
 							<p className="text-lg mb-4">Let&apos;s discuss your project or have a chat!</p>
 						</div>
 						<ContactMeSection />
