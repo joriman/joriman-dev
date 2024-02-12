@@ -51,7 +51,7 @@ export default function Home() {
 							<div>
 								<h2 className="font-bold text-4xl m-6 text-center">Recent Projects</h2>
 								<p className="text-lg m-6">Explore some of my latest work:</p>
-								<Link href="/projects" className="text-lg py-2 px-4 bg-royal-navy rounded-lg text-white">View Projects</Link>
+								<Link href="/projects" className="text-lg py-2 px-4 transition ease-in-out delay-50 bg-royal-navy rounded-lg text-white hover:bg-white hover:border hover:border-royal-navy hover:text-yellow-500">View Projects</Link>
 							</div>	
 						</div>
 					</section>

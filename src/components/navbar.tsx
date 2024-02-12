@@ -1,5 +1,5 @@
 import Link from "next/link"
-import MainLogo from "./main-logo"
+import MainLogo from "../assets/mainlogo/main-logo"
 
 export function Navbar() {
     return (

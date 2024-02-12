@@ -12,7 +12,7 @@ const ContactMeSection = () => {
                 </p>
             </div>
             
-            <div className="bg-gray-100 p-4 md:p-8 rounded-lg">
+            <div className=" p-4 md:p-8 rounded-2xl border border-blue-900">
                 <form className="flex flex-col">
                     <div className="mb-6">
                         <label
@@ -25,7 +25,7 @@ const ContactMeSection = () => {
                             type="email"
                             id="email"
                             required
-                            className="bg-gray-900 border border-gray-700 placeholder-gray-400 text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                            className="bg-royal-navy border border-gray-700 placeholder-gray-400 text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="youremail@google.com"
                         />
                     </div>
@@ -40,7 +40,7 @@ const ContactMeSection = () => {
                             type="text"
                             id="subject"
                             required
-                            className="bg-gray-900 border border-gray-700 placeholder-gray-400 text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                            className="bg-royal-navy border border-gray-700 placeholder-gray-400 text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="Re: Why you want to message me"
                         />
                     </div>
@@ -54,13 +54,13 @@ const ContactMeSection = () => {
                         <textarea
                             name="message"
                             id="message"
-                            className="bg-gray-900 border border-gray-700 placeholder-gray-400 text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                            className="bg-royal-navy border border-gray-700 placeholder-gray-400 text-gray-100 text-sm rounded-lg block w-full p-2.5"
                             placeholder="Write here the details!"
                         />
                     </div>
                     <button
                         type="submit"
-                        className="bg-royal-navy hover:bg-yellow-500 hover:text-royal-navy text-white font-semibold py-2.5 px-5 rounded-lg w-full"
+                        className="bg-yellow-500 border-2 border-yellow-500 hover:bg-royal-navy hover:text-yellow-500 hover:border-yellow-500 text-royal-navy dark:text-white font-semibold py-2 px-5 rounded-lg w-full"
                     >
                         Send Message
                     </button>
