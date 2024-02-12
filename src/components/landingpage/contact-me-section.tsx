@@ -5,7 +5,7 @@ const ContactMeSection = () => {
     return (
         <div className="grid md:grid-cols-2 relative">
             <div className="flex flex-col justify-center text-center mb-6">
-                <p className="text-gray-800 font-medium text-lg md:mx-12 max-w-md">
+                <p className="text-gray-800 dark:text-gray-200 font-medium text-lg md:mx-12 max-w-md">
                     I always enjoy hearing from new people.
                     Whether you have a question or just want to say hi, I&apos;ll try my best
                     to get back to you!
@@ -60,7 +60,7 @@ const ContactMeSection = () => {
                     </div>
                     <button
                         type="submit"
-                        className="bg-blue-700 hover:bg-blue-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+                        className="bg-royal-navy hover:bg-yellow-500 hover:text-royal-navy text-white font-semibold py-2.5 px-5 rounded-lg w-full"
                     >
                         Send Message
                     </button>

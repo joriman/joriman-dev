@@ -9,7 +9,7 @@ export default function Contact() {
     <>
       <Head>
         <title>Projects | Jamon Jordan Portfolio Website & Blog</title>
-        <meta property="og:title" content="This is the title" key="title" />
+        <meta property="og:title" content="Projects showcase" key="title" />
       </Head>
       <Layout>
         <h1 className="flex flex-row justify-center min-h-dvh text-4xl p-6 font-bold">Projects</h1>
