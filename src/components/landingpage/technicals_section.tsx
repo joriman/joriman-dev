@@ -1,6 +1,6 @@
-import BriefcaseLogo from "./briefcase_icon";
-import BulbLogo from "./bulb_icon";
-import RocketLogo from "./rocket_icon";
+import BriefcaseLogo from "../../assets/landingpage/briefcase_icon";
+import BulbLogo from "../../assets/landingpage/bulb_icon";
+import RocketLogo from "../../assets/landingpage/rocket_icon";
 import JavascriptLogo from "@/assets/logos/javascript_logo";
 import HTMLLogo from "@/assets/logos/html_logo";
 import ReactLogo from "@/assets/logos/react_logo";
@@ -20,7 +20,6 @@ import VSCodeLogo from "@/assets/logos/vscode_logo";
 import DockerLogo from "@/assets/logos/docker_logo";
 import KubernetesLogo from "@/assets/logos/kubernetes_logo";
 import JenkinsLogo from "@/assets/logos/jenkins_logo";
-import { Fade, Slide } from "react-awesome-reveal";
 
 export default function Technicals() {
     return (
@@ -31,66 +30,52 @@ export default function Technicals() {
                         <span className='inline-block align-middle relative overflow-visible box-content'>
                             <BulbLogo />
                         </span>
-                        <Fade triggerOnce cascade>
-                                <h2 className=' text-2xl font-bold text-gray-800'>Services I Offer 🛠️</h2>
-                                <p>In my role as a computer scientist, I specialize in offering a range of services to meet your business needs. From software development to website management, my expertise encompasses:</p>
-                                <ul className='list-none space-y-2'>
-                                    <li><b className="text-blue-700 font-bold text-lg">Software Development</b> <p>Crafting scalable and efficient software solutions tailored to your business needs.</p></li>
-                                    <li><b className="text-blue-700 font-bold text-lg">Web Development</b> <p>Building modern and responsive websites that leave a lasting impression.</p> </li>
-                                    <li><b className="text-blue-700 font-bold text-lg">Outsourcing</b> <p>Providing specialized expertise to enhance your development projects.</p></li>
-                                    <li><b className="text-blue-700 font-bold text-lg">Website Management</b> <p>Ensuring your online presence is always at its best, from development to maintenance.</p> </li>
-                                </ul>
-                        </Fade>
+                        <h2 className=' text-2xl font-bold text-gray-800'>Services I Offer 🛠️</h2>
+                        <p>In my role as a computer scientist, I specialize in offering a range of services to meet your business needs. From software development to website management, my expertise encompasses:</p>
+                        <ul className='list-none space-y-2'>
+                            <li><b className="text-blue-700 font-bold text-lg">Software Development</b> <p>Crafting scalable and efficient software solutions tailored to your business needs.</p></li>
+                            <li><b className="text-blue-700 font-bold text-lg">Web Development</b> <p>Building modern and responsive websites that leave a lasting impression.</p> </li>
+                            <li><b className="text-blue-700 font-bold text-lg">Outsourcing</b> <p>Providing specialized expertise to enhance your development projects.</p></li>
+                            <li><b className="text-blue-700 font-bold text-lg">Website Management</b> <p>Ensuring your online presence is always at its best, from development to maintenance.</p> </li>
+                        </ul>
                     </div>
                     <div className='flex-grow flex-shrink basis-0 py-12 md:pt-16 px-10 items-center text-center space-y-4 border-b md:border-b-0'>
                         <span className='inline-block align-middle relative overflow-visible box-content'>
                             <RocketLogo />
                         </span>
-                        <Fade cascade triggerOnce>
-                            <h2 className='text-2xl font-bold text-gray-800 '>Tech Stack ⌨️</h2>
-                            <p>My technical proficiency spans a diverse range of tools, languages, and frameworks.</p>
-                        </Fade>
+                        <h2 className='text-2xl font-bold text-gray-800 '>Tech Stack ⌨️</h2>
+                        <p>My technical proficiency spans a diverse range of tools, languages, and frameworks.</p>
                         <ul className="list-none space-y-2">
                             <li className="space-y-2">
                                 <b>Languages</b> 
                                 <div className="flex flex-row justify-center space-x-4">
-                                    <Fade cascade triggerOnce duration={400}> 
-                                        <HTMLLogo /> <CSSLogo /> <JavascriptLogo /> <TypescriptLogo /> <CPlusPlusLogo /> <PythonLogo /> 
-                                    </Fade>
+                                    <HTMLLogo /> <CSSLogo /> <JavascriptLogo /> <TypescriptLogo /> <CPlusPlusLogo /> <PythonLogo /> 
                                 </div>
                             </li>
                             <li className="flex flex-row space-between justify-center space-x-12 py-2">
                                 <div className="space-y-2">
                                     <b>Frontends</b> 
                                     <div className="flex flex-row justify-center space-x-4"> 
-                                        <Fade cascade triggerOnce duration={400}> 
-                                            <ReactLogo /> <NextLogo /> <SvelteLogo /> 
-                                        </Fade>
+                                        <ReactLogo /> <NextLogo /> <SvelteLogo /> 
                                     </div>
                                 </div>
                                 <div className="space-y-2">
                                     <b>Backends</b> 
-                                    <div className="flex flex-row justify-center space-x-4"> 
-                                        <Fade cascade triggerOnce duration={400}> 
+                                    <div className="flex flex-row justify-center space-x-4">  
                                             <NodeLogo /> <ExpressLogo /> 
-                                        </Fade>
                                     </div>
                                 </div>
                             </li>
                             <li className="space-y-2">
                                 <b>Databases</b> 
                                 <div className="flex flex-row justify-center space-x-4">
-                                    <Fade cascade triggerOnce duration={400}> 
-                                        <PostgreSQLLogo /> <MySQLLogo /> <MongoDBLogo /> 
-                                    </Fade>
+                                    <PostgreSQLLogo /> <MySQLLogo /> <MongoDBLogo /> 
                                 </div>
                             </li>
                             <li className="space-y-2">
                                 <b>Tools</b>
                                 <div className="flex flex-row justify-center space-x-4"> 
-                                    <Fade cascade triggerOnce duration={400}> 
-                                        <GitLogo /> <VSCodeLogo /> <DockerLogo /> <KubernetesLogo /> <JenkinsLogo />
-                                    </Fade>
+                                    <GitLogo /> <VSCodeLogo /> <DockerLogo /> <KubernetesLogo /> <JenkinsLogo />
                                 </div>
                             </li>
                         </ul>
@@ -99,18 +84,16 @@ export default function Technicals() {
                         <span className='inline-block align-middle relative overflow-visible box-content'>
                             <BriefcaseLogo />
                         </span>
-                        <Fade triggerOnce cascade>
-                            <h2 className='text-2xl font-bold text-gray-800'>Project Management & Design 🛣️</h2>
-                            <h4 className="text-lg font-semibold">Project Planning Experience</h4>
-                            <p>I specialize in meticulous project planning, ensuring every detail is thoughtfully considered. From gathering requirements to resource allocation, I create realistic timelines for on-time project delivery.</p>
-                            <h4 className="text-lg font-semibold">Pre-Development Design</h4>
-                            <p>My design-centric approach starts early in the process with pre-development design:</p>
-                            <ul>
-                                <li><b className="text-blue-700 text-lg">User-Centric Focus</b> <p>Prioritizing user needs for enhanced satisfaction.</p></li>
-                                <li><b className="text-blue-700 text-lg">Wireframing & Prototyping</b> <p>Visualizing projects early with detailed wireframes and prototypes.</p></li>
-                                <li><b className="text-blue-700 text-lg">Responsive Design</b> <p>Ensuring seamless experiences across various devices.</p></li>
-                            </ul>
-                        </Fade>
+                        <h2 className='text-2xl font-bold text-gray-800'>Project Management & Design 🛣️</h2>
+                        <h4 className="text-lg font-semibold">Project Planning Experience</h4>
+                        <p>I specialize in meticulous project planning, ensuring every detail is thoughtfully considered. From gathering requirements to resource allocation, I create realistic timelines for on-time project delivery.</p>
+                        <h4 className="text-lg font-semibold">Pre-Development Design</h4>
+                        <p>My design-centric approach starts early in the process with pre-development design:</p>
+                        <ul>
+                            <li><b className="text-blue-700 text-lg">User-Centric Focus</b> <p>Prioritizing user needs for enhanced satisfaction.</p></li>
+                            <li><b className="text-blue-700 text-lg">Wireframing & Prototyping</b> <p>Visualizing projects early with detailed wireframes and prototypes.</p></li>
+                            <li><b className="text-blue-700 text-lg">Responsive Design</b> <p>Ensuring seamless experiences across various devices.</p></li>
+                        </ul>
                     </div>
                 </div>
             </div>
