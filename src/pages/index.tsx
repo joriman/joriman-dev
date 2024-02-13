@@ -5,10 +5,19 @@ import Head from 'next/head'
 import Technicals from '@/components/landingpage/technicals_section';
 import AboutSection from '@/components/landingpage/about_section';
 import ContactMeSection from '@/components/landingpage/contact-me-section';
+import { trpc } from '../utils/trpc';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+	const hello = trpc.hello.useQuery({ text: 'user' });
+
+	/*
+	if (!hello.data) {
+	  return <div>Loading...</div>;
+	}
+	*/
+
 	return (
 		<>
 			<Head>
@@ -61,7 +70,16 @@ export default function Home() {
 							<h2 className="font-bold text-4xl m-6">Contact Me</h2>
 							<p className="text-lg mb-4">Let&apos;s discuss your project or have a chat!</p>
 						</div>
-						<ContactMeSection />
+						<div className="grid md:grid-cols-2 relative">
+							<div className="flex flex-col justify-center text-center mb-6">
+								<p className="text-gray-800 dark:text-gray-200 font-medium text-lg md:mx-12 max-w-md">
+									I always enjoy hearing from new people.
+									Whether you have a question or just want to say hi, I&apos;ll try my best
+									to get back to you!
+								</p>
+							</div>
+							<ContactMeSection />
+						</div>
 					</section>
 				</main>
 			</Layout>

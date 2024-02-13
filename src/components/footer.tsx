@@ -7,7 +7,7 @@ export function Footer() {
                     type="button"
                     data-te-ripple-init
                     data-te-ripple-color="light"
-                    className="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal bg-gray-700 text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+                    className="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal bg-gray-700 hover:bg-gray-800 text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-4 w-4"
@@ -21,7 +21,7 @@ export function Footer() {
                     type="button"
                     data-te-ripple-init
                     data-te-ripple-color="light"
-                    className="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal bg-gray-700 text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+                    className="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal bg-blue-700 hover:bg-blue-800 text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-4 w-4"
