@@ -23,14 +23,14 @@ import JenkinsLogo from "@/assets/logos/jenkins_logo";
 
 export default function Technicals() {
     return (
-        <div className='justify-center items-center md:max-w-[1300px] m-auto relative w-auto shadow-xl'>
+        <div className='justify-center items-center md:max-w-[1300px] m-auto relative w-auto shadow-xl text-gray-800'>
             <div className='flex m-[-1rem] rounded-xl bg-gray-100 items-center'>
                 <div className="flex flex-col md:flex-row">
                     <div className='flex-grow flex-shrink basis-0 py-12 md:py-16 pb-12 px-10 md:border-r border-b md:border-b-0 font-medium text-gray-800 text-center items-center space-y-4 box-sizing'>
                         <span className='inline-block align-middle relative overflow-visible box-content'>
                             <BulbLogo />
                         </span>
-                        <h2 className=' text-2xl font-bold text-gray-800'>Services I Offer 🛠️</h2>
+                        <h2 className=' text-2xl font-bold'>Services I Offer 🛠️</h2>
                         <p>In my role as a computer scientist, I specialize in offering a range of services to meet your business needs. From software development to website management, my expertise encompasses:</p>
                         <ul className='list-none space-y-2'>
                             <li><b className="text-blue-700 font-bold text-lg">Software Development</b> <p>Crafting scalable and efficient software solutions tailored to your business needs.</p></li>
