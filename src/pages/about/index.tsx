@@ -1,12 +1,12 @@
+import Inner from '@/components/layout/inner'
 import { Inter } from 'next/font/google'
-import Layout from '../layout'
 import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function About() {
   return (
-    <>
+    <Inner>
       <Head>
         <title>Jamon Jordan Portfolio Website & Blog | Landing Page</title>
         <meta property="og:title" content="Jamon Jordan's portfolio website and blog" key="title" />
@@ -36,6 +36,6 @@ export default function About() {
           </div>
         </div>
       </main>
-    </>
+    </Inner>
   )
 }

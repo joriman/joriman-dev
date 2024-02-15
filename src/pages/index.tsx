@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import Layout from './layout'
+import Inner from '../components/layout/inner'
 import Link from 'next/link';
 import Head from 'next/head'
 import Technicals from '@/components/landingpage/technicals_section';
@@ -19,7 +19,7 @@ export default function Home() {
 	*/
 
 	return (
-		<>
+		<Inner>
 			<Head>
 				<title>Jamon Jordan Portfolio Website & Blog | Landing Page</title>
 				<meta property="og:title" content="Jamon Jordan's portfolio website and blog" key="title" />
@@ -81,6 +81,6 @@ export default function Home() {
 					</div>
 				</section>
 			</main>
-		</>
+		</Inner>
 	)
 }

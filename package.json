@@ -16,6 +16,8 @@
     "@trpc/next": "^11.0.0-next-beta.283",
     "@trpc/react-query": "^11.0.0-next-beta.283",
     "@trpc/server": "^11.0.0-next-beta.283",
+    "@tsparticles/react": "^3.0.0",
+    "framer-motion": "^11.0.5",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",

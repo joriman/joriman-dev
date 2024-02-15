@@ -1,13 +1,13 @@
 import '@/styles/globals.css'
 import type { AppType } from 'next/app'
 import { trpc } from '../utils/trpc'
-import Layout from './layout'
+import { AnimatePresence } from 'framer-motion'
 
-const App: AppType = ({ Component, pageProps }) => {
-  return ( 
-    <Layout>
-      <Component {...pageProps} /> 
-    </Layout>
+const App: AppType = ({ Component, pageProps, router }) => {
+  return (
+    <AnimatePresence mode='wait'>
+        <Component key={router.route} {...pageProps} /> 
+    </AnimatePresence>
   )
 }
 
