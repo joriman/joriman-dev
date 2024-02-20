@@ -1,7 +1,7 @@
-import { publicProcedure, router } from '../trpc';
+import { procedure, router } from '../trpc';
  
 const appRouter = router({
-  greeting: publicProcedure.query(() => 'hello tRPC v10!'),
+  greeting: procedure.query(() => 'hello tRPC v10!'),
 });
  
 // Export only the type of a router!
