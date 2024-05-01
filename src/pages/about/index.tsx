@@ -4,38 +4,54 @@ import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function About() {
+import { motion } from 'framer-motion';
+
+const About = () => {
   return (
-    <Inner>
-      <Head>
-        <title>Jamon Jordan Portfolio Website & Blog | Landing Page</title>
-        <meta property="og:title" content="Jamon Jordan's portfolio website and blog" key="title" />
-      </Head>
-      <main className="font-mono flex justify-center dark:bg-gray-800">
-        <div className="text-gray-300">
-          <div className="flex p-8">
-            <div className="flex-shrink-0 w-16 pr-4">
-              <div className="text-gray-400 leading-5">
-                <span className="block">1</span>
-                <span className="block">2</span>
-                <span className="block">3</span>
-                <span className="block">4</span>
-                <span className="block">5</span>
-                <span className="block">6</span>
-                <span className="block">7</span>
-              </div>
-            </div>
-            <div className="code-content text-gray-800 dark:text-gray-300">
-              <div className="hover:bg-gray-600 hover:text-white" data-line-number="1">{"const aboutMe = () => {"}</div>
-              <div className="hover:bg-gray-600 hover:text-white" data-line-number="2">{"let name = \"Jamon\";"}</div>
-              <div className="hover:bg-gray-600 hover:text-white" data-line-number="3">{"let role = \"Full Stack Developer\";"}</div>
-              <div className="hover:bg-gray-600 hover:text-white" data-line-number="11">{"return {"};</div>
-              <div className="hover:bg-gray-600 hover:text-white" data-line-number="10">{"\"Passionate about crafting excellent digital experiences!\";"}</div>
-              <div className="hover:bg-gray-600 hover:text-white" data-line-number="11">{"}"};</div>
-            </div>
-          </div>
-        </div>
-      </main>
+    <Inner >
+      <div className="container mx-auto py-8">
+        <motion.pre
+          className="language-javascript bg-gray-800 text-white p-4 rounded-md"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <motion.code
+            className="font-mono"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 1,
+              duration: 2,
+              staggerChildren: 0.1,
+            }}
+          >
+            {`
+              // Welcome to my About page!
+              const aboutMe = {
+                name: 'Jamon Jordan',
+                role: 'Software Developer',
+                bio: 'I'm a passionate developer who loves sovling problems and drinking good coffee.',
+                skills: ['Frontend Development', 'Backend Development', 'MERN Stack', 'Node.js'],
+                education: ['Southern New Hamphsire University', 'Bachelor of Science in Computer Science'],
+                interests: ['Classical Guitar', 'Gaming', 'Reading Good Books', 'Tech'],
+              };
+            `
+              .split('\n')
+              .map((line, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                >
+                  {index} {line}
+                </motion.div>
+              ))}
+          </motion.code>
+        </motion.pre>
+      </div>
     </Inner>
-  )
-}
+  );
+};
+
+export default About;

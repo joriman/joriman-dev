@@ -2,9 +2,9 @@ import { Inter } from 'next/font/google'
 import Inner from '../components/layout/inner'
 import Link from 'next/link';
 import Head from 'next/head'
-import Technicals from '@/components/landingpage/technicals_section';
-import AboutSection from '@/components/landingpage/about_section';
-import ContactMeSection from '@/components/landingpage/contact-me-section';
+import Technicals from '@/components/landingpage/technicalsSection';
+import AboutSection from '@/components/landingpage/aboutSection';
+import ContactMeSection from '@/components/landingpage/contactSection';
 // import { trpc } from '../utils/trpc';
 
 const inter = Inter({ subsets: ['latin'] })

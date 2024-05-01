@@ -5,10 +5,10 @@ const MainLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={132}
+    width={112}
     zoomAndPan="magnify"
     viewBox="0 0 375 135.000003"
-    height={46}
+    height={40}
     preserveAspectRatio="xMidYMid meet"
     {...props}
   >
