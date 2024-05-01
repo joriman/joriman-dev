@@ -7,14 +7,17 @@ export function Navbar() {
             <Link className="" href="/">
                 <MainLogo />
             </Link>
-            <div className="flex flex-row md:space-x-4 font-semibold">
-                <Link className="p-2 mx-1 md:p-2 hover:text-yellow-500 text-gray-800 dark:text-gray-200 text-md md:text-2xl" href="/about">
+            <div className="flex flex-row md:space-x-4 font-semibold text-gray-800 dark:text-gray-200 text-md md:text-xl">
+                <Link className="p-2 rounded-xl hover:bg-opacity-85 hover:bg-yellow-500" href="/services">
+                    <h2>Services</h2>
+                </Link>
+                <Link className="p-2 rounded-xl hover:bg-opacity-85 hover:bg-yellow-500" href="/about">
                     <h2>About</h2>
                 </Link>
-                <Link className="p-2 mx-1 md:p-2 hover:text-yellow-500 text-gray-800 dark:text-gray-200 text-md md:text-2xl" href="/blog">
+                <Link className="p-2 rounded-xl hover:bg-opacity-85 hover:bg-yellow-500" href="/blog">
                     <h2>Blog</h2>
                 </Link>
-                <Link className="p-2 mx-1 md:p-2 hover:text-yellow-500 text-gray-800 dark:text-gray-200 text-md md:text-2xl" href="/projects">
+                <Link className="p-2 rounded-xl hover:bg-opacity-85 hover:bg-yellow-500" href="/projects">
                     <h2>Projects</h2>
                 </Link>
             </div>
